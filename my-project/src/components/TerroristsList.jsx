@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { terrorists } from "../assets/data/terrorists_data";
 
 export function TerroristsList({ terrorists, setState }) {
   const [terroristToEliminate, setTerroristToEliminate] = useState("");
-  const list = terrorists;
   function openPanel(terrorist) {
     const pannel = document.querySelector(".pannel");
     pannel.classList.remove("hidden");
@@ -15,7 +13,7 @@ export function TerroristsList({ terrorists, setState }) {
     setState((prev) => {
       return {
         ...prev,
-        terrorists: list.map((t) => {
+        terrorists: terrorists.map((t) => {
           if (t.name === terroristToEliminate.name) {
             t.status = "dead";
           }
