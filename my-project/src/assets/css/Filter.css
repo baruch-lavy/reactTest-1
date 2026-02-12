@@ -1,0 +1,35 @@
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    padding: 1rem;
+
+    input, select{
+        border: 2px solid gray;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+
+    input:hover, select:hover {
+        background: whitesmoke;
+        transform: scale(1.01);
+    }
+    
+    button{
+        padding: 1rem;
+        background: red;
+        border-radius: 10px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background: rgb(88, 3, 3);
+        color: wheat;
+        transform: scale(1.09);
+    }
+}

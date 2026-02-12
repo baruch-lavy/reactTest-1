@@ -1,0 +1,44 @@
+.terrorists-table {
+  width: 1200px;
+  position: relative;
+  img {
+    width: 4rem;
+  }
+  margin-top: 1rem;
+  border: 3px solid grey;
+
+  th {
+    background: bisque;
+    padding: 0.5rem;
+  }
+
+  tr:hover {
+    background: gainsboro;
+    transform: scale(1.01);
+  }
+}
+
+.pannel.hidden {
+  display: none;
+}
+
+.pannel {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  position: absolute;
+  bottom: 5rem;
+  right: 10px;
+
+  select {
+    padding: 0.5rem;
+  }
+}
